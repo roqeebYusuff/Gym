@@ -1,0 +1,30 @@
+ERROR - 2021-12-25 00:11:24 --> Table 'gym.user' doesn't exist
+ERROR - 2021-12-25 00:14:01 --> Table 'gym.users' doesn't exist
+ERROR - 2021-12-25 00:14:29 --> Table 'gym.users' doesn't exist
+ERROR - 2021-12-25 00:15:19 --> Table 'gym.users' doesn't exist
+CRITICAL - 2021-12-25 00:15:19 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\gym\GYM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(17): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2021-12-25 00:16:18 --> Table 'gym.users' doesn't exist
+CRITICAL - 2021-12-25 00:16:18 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\gym\GYM\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#1 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(17): CodeIgniter\BaseModel->findAll()
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-25 00:16:38 --> Object of class App\Models\User could not be converted to string
+#0 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#1 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}

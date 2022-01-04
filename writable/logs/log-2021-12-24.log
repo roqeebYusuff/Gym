@@ -1,0 +1,84 @@
+CRITICAL - 2021-12-24 17:13:05 --> Call to undefined method App\Models\User::login
+#0 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(20): CodeIgniter\Model->__call('login', Array)
+#1 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-24 17:13:57 --> Call to undefined method App\Models\User::login
+#0 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(19): CodeIgniter\Model->__call('login', Array)
+#1 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-24 17:38:55 --> Undefined property: App\Controllers\User::$db
+#0 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 19)
+#1 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-12-24 17:43:23 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-12-24 17:43:23 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\gym\GYM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(20): CodeIgniter\Database\BaseConnection->query('SELECT * FROM `...', Array)
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2021-12-24 17:51:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? AND `password` = ?' at line 1
+ERROR - 2021-12-24 17:52:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? AND `password` = ?' at line 1
+ERROR - 2021-12-24 17:54:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '? AND `password` = ?' at line 1
+CRITICAL - 2021-12-24 17:54:01 --> Call to a member function getResult() on bool
+#0 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#1 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+ERROR - 2021-12-24 18:01:51 --> Table 'gym.users' doesn't exist
+ERROR - 2021-12-24 18:01:53 --> Table 'gym.users' doesn't exist
+CRITICAL - 2021-12-24 18:22:17 --> Undefined property: App\Controllers\User::$load
+#0 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 52)
+#1 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->register()
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-12-24 18:23:16 --> Table 'gym.users' doesn't exist
+ERROR - 2021-12-24 18:23:18 --> Table 'gym.users' doesn't exist
+CRITICAL - 2021-12-24 18:23:21 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\gym\GYM\app\Views\user\auth\register.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\gym\GYM\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gym\GYM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\gym\GYM\system\Common.php(1097): CodeIgniter\View\View->render('user/auth/regis...', Array, true)
+#4 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(52): view('user/auth/regis...', Array)
+#5 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->register()
+#6 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-12-24 23:55:39 --> Table 'gym.users' doesn't exist
+ERROR - 2021-12-24 23:56:06 --> Table 'gym.users' doesn't exist
+CRITICAL - 2021-12-24 23:56:13 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\gym\GYM\app\Views\user\auth\register.php(73): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 73)
+#1 C:\xampp\htdocs\gym\GYM\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gym\GYM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\gym\GYM\system\Common.php(1097): CodeIgniter\View\View->render('user/auth/regis...', Array, true)
+#4 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(52): view('user/auth/regis...', Array)
+#5 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->register()
+#6 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-12-24 23:59:21 --> Table 'gym.users' doesn't exist

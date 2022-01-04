@@ -1,0 +1,173 @@
+CRITICAL - 2021-12-28 05:25:05 --> Call to undefined method App\Models\User::getPost
+#0 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(40): CodeIgniter\Model->__call('getPost', Array)
+#1 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->register()
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-28 05:26:27 --> Call to undefined method App\Models\User::getPost
+#0 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(40): CodeIgniter\Model->__call('getPost', Array)
+#1 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->register()
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-12-28 05:27:59 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2021-12-28 05:27:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\gym\GYM\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\gym\GYM\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\xampp\htdocs\gym\GYM\system\Model.php(509): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#3 C:\xampp\htdocs\gym\GYM\system\Model.php(592): CodeIgniter\Model->countAllResults()
+#4 C:\xampp\htdocs\gym\GYM\system\BaseModel.php(655): CodeIgniter\Model->shouldUpdate(Array)
+#5 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(40): CodeIgniter\BaseModel->save(Array)
+#6 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->register()
+#7 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-12-28 05:31:28 --> Table 'gym.users' doesn't exist
+CRITICAL - 2021-12-28 05:31:29 --> Allowed fields must be specified for model: App\Models\User
+#0 C:\xampp\htdocs\gym\GYM\system\BaseModel.php(1138): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\User')
+#1 C:\xampp\htdocs\gym\GYM\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\gym\GYM\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#3 C:\xampp\htdocs\gym\GYM\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#4 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(40): CodeIgniter\BaseModel->save(Array)
+#5 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->register()
+#6 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-28 08:44:16 --> Array to string conversion
+#0 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 22)
+#1 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-28 09:46:45 --> Call to a member function asArray() on null
+#0 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(21): App\Models\User->login(Array)
+#1 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-28 09:59:32 --> Undefined array key "password"
+#0 C:\xampp\htdocs\gym\GYM\app\Models\User.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 99)
+#1 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(20): App\Models\User->login(Array)
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-28 10:04:39 --> Undefined array key "password"
+#0 C:\xampp\htdocs\gym\GYM\app\Models\User.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 101)
+#1 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(20): App\Models\User->login(Array)
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-28 10:05:41 --> Attempt to read property "password" on array
+#0 C:\xampp\htdocs\gym\GYM\app\Models\User.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 101)
+#1 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(20): App\Models\User->login(Array)
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-28 10:07:06 --> Attempt to read property "password" on array
+#0 C:\xampp\htdocs\gym\GYM\app\Models\User.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 100)
+#1 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(20): App\Models\User->login(Array)
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-28 10:07:34 --> Attempt to read property "password" on array
+#0 C:\xampp\htdocs\gym\GYM\app\Models\User.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 100)
+#1 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(20): App\Models\User->login(Array)
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2021-12-28 10:18:19 --> Duplicate entry 'roqeeb' for key 'username'
+CRITICAL - 2021-12-28 10:43:48 --> Undefined array key "data"
+#0 C:\xampp\htdocs\gym\GYM\app\Models\User.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 97)
+#1 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(20): App\Models\User->login(Array)
+#2 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#3 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-28 20:15:52 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\gym\GYM\app\Views\user\auth\login.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 133)
+#1 C:\xampp\htdocs\gym\GYM\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gym\GYM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\gym\GYM\system\Common.php(1097): CodeIgniter\View\View->render('user/auth/login', Array, true)
+#4 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(32): view('user/auth/login', Array)
+#5 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#6 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-28 20:17:01 --> Call to undefined method CodeIgniter\Session\Session::flashdata()
+#0 C:\xampp\htdocs\gym\GYM\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\gym\GYM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\gym\GYM\system\Common.php(1097): CodeIgniter\View\View->render('user/auth/login', Array, true)
+#3 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(32): view('user/auth/login', Array)
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#5 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-28 20:17:15 --> Call to undefined method CodeIgniter\Session\Session::flashdata()
+#0 C:\xampp\htdocs\gym\GYM\system\View\View.php(214): include()
+#1 C:\xampp\htdocs\gym\GYM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\gym\GYM\system\Common.php(1097): CodeIgniter\View\View->render('user/auth/login', Array, true)
+#3 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(32): view('user/auth/login', Array)
+#4 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->login()
+#5 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#6 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-12-28 22:13:31 --> Undefined variable $data
+#0 C:\xampp\htdocs\gym\GYM\app\Views\user\home.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 87)
+#1 C:\xampp\htdocs\gym\GYM\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gym\GYM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\gym\GYM\system\Common.php(1097): CodeIgniter\View\View->render('user/home', Array, true)
+#4 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(24): view('user/home', Array)
+#5 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->home()
+#6 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-28 22:13:51 --> Undefined variable $data
+#0 C:\xampp\htdocs\gym\GYM\app\Views\user\home.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 87)
+#1 C:\xampp\htdocs\gym\GYM\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gym\GYM\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\gym\GYM\system\Common.php(1097): CodeIgniter\View\View->render('user/home', Array, true)
+#4 C:\xampp\htdocs\gym\GYM\app\Controllers\User.php(24): view('user/home', Array)
+#5 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(824): App\Controllers\User->home()
+#6 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampp\htdocs\gym\GYM\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gym\GYM\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gym\GYM\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
